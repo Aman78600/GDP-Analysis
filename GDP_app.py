@@ -12,7 +12,7 @@ df=data_[data_['Series Name']== selected_df ]
 
 def coumpar_country_GDP():
     c_name=df['Country Name'].unique()
-    country_name=st.multiselect('Enter country name which you whant to coumper.',options=c_name,default=None)
+    country_name=st.multiselect('Choose country name which you whant to coumper.',options=c_name,default=None)
     try:
     
 
