@@ -25,7 +25,7 @@ def coumpar_country_GDP():
             c1['Country Name']= i
             country_data.append(c1)
         df_country_coumparition=pd.concat(country_data,axis=0)
-        fig=px.line(df_country_coumparition,x='Year',y='Value',color='Country Name',width=1500,height=700)
+        fig=px.line(df_country_coumparition,x='Year',y='Value',color='Country Name',width=1350,height=700)
         
         # t=df_country_coumparition.max()[4:].astype(float).astype(int)
         # y_axis_tickvals = range=list(np.linspace(0,int('1'+('0'*len(str(t.max())))),2).astype(int))  
