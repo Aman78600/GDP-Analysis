@@ -7,7 +7,7 @@ data_=pd.read_csv('WORLD.csv')
 data_=data_.iloc[:,:-1]
 
 year=data_.columns.str[:5][4:].astype(int)
-selected_df=st.selectbox('Enter Type :-',options=data_['Series Name'].unique())
+selected_df=st.selectbox('Enter GDP or Else Type :-',options=data_['Series Name'].unique())
 df=data_[data_['Series Name']== selected_df ]
 
 def coumpar_country_GDP():
